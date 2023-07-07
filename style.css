@@ -4,7 +4,7 @@ body {
 
 .container {
   min-height: 100vh;
-  background-color: black;
+  background-color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -24,4 +24,29 @@ body {
   cursor: pointer;
   text-align: center;
   letter-spacing: 0.1rem;
+  position: relative;
+  box-sizing: border-box;
+  border: none;
+}
+.btn-style1 {
+  color: white;
+  background-color: green;
+  border-bottom: 5px solid #075024;
+  transition: all 0.3s;
+}
+.btn-style1:hover {
+  margin-top: 3px;
+  border-bottom: 2px solid rgb(3, 49, 3);
+}
+.btn-style2 {
+  background: #f1e767;
+  background: linear-gradient(to bottom, #f1e767 0%, #feb645 100%);
+}
+.btn-style2:hover {
+  background: linear-gradient(to top, #f1e767 0%, #feb645 100%);
+}
+
+.btn-style3::before {
+}
+.btn-style3:before {
 }
